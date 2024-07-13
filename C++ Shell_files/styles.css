@@ -1,0 +1,70 @@
+* {margin:0; padding:0}
+/*
+@font-face {
+	font-family:'Play';
+	src: url('../static/Play-Regular.woff2');
+}
+*/
+
+/* play-regular - latin */
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('/assets/fonts/play-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/assets/fonts/play-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* play-700 - latin */
+@font-face {
+    font-family: 'Play';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+    url('/assets/fonts/play-v17-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/assets/fonts/play-v17-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html, body {margin:0; padding:0; background:#fafafa; font-family:'Play', Sans-Serif;}
+#header {background:#eee; padding: 0 10px;}
+#motto {position:absolute; top:0px; right:10px; text-align:right; font-size:12px;}
+#bar {background-color:#026;
+    background:linear-gradient(90deg, #f0f8ff, #eee 20%, #aaa 50%, #000 70%);
+    border-top:1px solid black; border-bottom: 1px solid black; color:#fff; font-size:12px; text-align:right;  }
+#bar A {display:inline-block; margin: 0 1px; padding:0 5px; color:#fff; text-decoration:none;}
+
+#bar A:hover {background:#5566aa;}
+
+#bottom {border-top:1px solid black; padding: 0 10px; font-size:12px; text-align:center;}
+H1, H2 { margin:0; padding:0 }
+H1 A { text-decoration:none; font: 800 40px 'Play', Sans-serif; color: #67b; text-shadow: -1px -1px 0 #aaf, 1px 1px 0 #236, 2px 2px 1px #777; }
+H2 A { text-decoration:none; font: 800 25px 'Play', Sans-serif; color: #67b; text-shadow: -1px -1px 0 #aaf, 1px 1px 0 #236, 2px 2px 1px #777; }
+H1 A:hover, H2 A:hover { color: #89d; }
+
+/* buttons: btn=regular, btnm=highlighted */
+.btn, .btnm {
+    display: inline-block;
+    width:96px; height:26px; line-height:26px; font-size:15px;
+    border-radius:4px;
+    border:1px solid #a0a0a0;
+    text-indent:0;
+    text-align:center;
+    text-decoration:none;
+}
+.btn:active, .btnm:active { position:relative; top:2px; left:1px; }
+
+/*.btn  { border-color:#999; box-shadow:inset 0px 1px 0px 0px #ddd; background:linear-gradient(#eee 5%, #ddd 100%); background-color:#ddd; color:#000; }*/
+.btn { border-color:#999; box-shadow:inset 0px 1px 0px 0px #ddd; background:linear-gradient(#eee 5%, #ddd 49%, #ccc 51%, #bbb 100%); background-color:#ddd; color:#000; }
+.btn:hover  { background:linear-gradient(#fff 5%, #eee 49%, #ddd 51%, #ccc 100%); background-color:#ddd; }
+.btn:active { background:linear-gradient(#fff 5%, #eee 100%); background-color:#fff; }
+
+.btnm {float:right}
+.btnm { border-color:#56a; box-shadow:inset 0px 1px 0px 0px #abf; background:linear-gradient(#89d 5%, #78c 49%, #67b 51%, #459 100%); background-color:#67b; color:#fff; text-shadow:1px 1px 0px #6666; font-weight:bold; }
+.btnm:hover  { background:linear-gradient(#abf 5%, #9ae 49%, #89d 51%, #67b 100%); background-color:#89d; }
+.btnm:active { background:linear-gradient(#abf 5%, #9ae 100%); background-color:#b0e0ff; }
+
+/* comped (app box) top=compiler, middle=buttons bottom=output */
+.comped { margin:8px; /* max-width:728px; */ }
+.comped .top { border:1px solid #808080; border-radius:3px; padding:2px; position:relative;}
+.comped .middle { margin:8px 0; }
+.comped .bottom { clear: both; }
+
